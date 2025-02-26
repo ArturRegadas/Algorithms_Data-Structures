@@ -30,6 +30,12 @@ a gente -> nós
             <li>Árvore Geradora Mínima</li>
         </ul>
     </li>
+    <li>Geometria Computacional
+        <ul>
+            <li>Area Irregular Poligon
+            <li>Convex Hull</li>
+            <li>Ray Casting</li>
+        </ul>
 </ul>
 
 </ul>

@@ -64,11 +64,9 @@ vector<point> grahamScan(vector<point> points){
     vector<pair<lb, point>> AnglePoint = angleForPoint(base, points);
     sort(AnglePoint.begin(), AnglePoint.end(), comparation);
 
-    //verifica se é possivel fazer um poligono
-    if(AnglePoint.size()<2)return {point(-1,-1)};
 
-    //
-
+    //se o angulo do atual for maior que o angulo anterior, substiui
+    //se nao apenas incrementa ao ConvexHull
     for(pair<lb, point> current : AnglePoint){
         while(ConvexHull.size()>2 && 
         getAngle(current.second, ConvexHull[ConvexHull.size()-2], ConvexHull[ConvexHull.size()-3])>
