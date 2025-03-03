@@ -3,9 +3,9 @@
 
 <h2>Logica -Granham Scan O(n log n)- </h2>
 <ul>
-		<li>Primeiro é escolhido um vertice garantido no Convex Hull, no caso      o vertice mais a esquerda ou seja com a menor das abcissas</li>
+		<li>Primeiro é escolhido um vertice garantido no Convex Hull, no caso o vertice mais a esquerda ou seja com a menor das abcissas</li>
 		<li>Depois ordena-se os vertices baseados no ângulo dos pontos (ponto base com y +1, ponto base, ponto atual)</li>
-		<li>Para todos os agulos, verifica se o angulo do atual for maior que o angulo anterior, substiui, caso contrario apenas incrementa ao ConvexHull</li>
+		<li>Para todos os vertices, verifica se o novo angulo for maior que o angulo anterior, substiui, caso contrario apenas incrementa ao ConvexHull</li>
 		<h2>Geometria</h2>
 		<ul>
 			<li>A formula para o calculo de um ângulo a partir de 3 pontos é :
