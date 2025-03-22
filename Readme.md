@@ -2,9 +2,7 @@
 
 Por mais que isso seja uma explicação dos codigos, eu não levo essa conta a sério...
 <br>
-sempre importante lembrar que :<br>
-agente -> agente do FBI<br>
-a gente -> nós
+
 <h2>Sumario</h2>
 <ul>
 <ul>
