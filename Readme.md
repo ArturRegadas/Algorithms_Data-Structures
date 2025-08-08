@@ -11,11 +11,14 @@ Por mais que isso seja uma explicação dos codigos, eu não levo essa conta a s
             <li>Listas</li>
             <li>Pilha</li>
             <li>Fila</li>
-            <li>Conjuntos (Sets)</li>
             <li>Dicionários (Hash)</li>
             <li>Árvore Binária</li>
-            <li>Heaps</li>
             <li>Grafos</li>
+            <li>Heaps</li>
+            <li>Union-Find</li>
+            <li>Segment Tree<li>
+            <li>Fenwick Tree</li>
+            <li>Conjuntos (Sets)</li>
         </ul>
     </li>
     <li>Algoritmos
