@@ -33,7 +33,7 @@ class UnionFind{
         if(pa==pb)return;
         if(size[pa]>size[pb])swap(pa, pb);
         parent[pa] = pb;
-        size[pa]+=size[pb];
+        size[pb]+=size[pa];
         
     }   
     bool inSet(int a, int b){
