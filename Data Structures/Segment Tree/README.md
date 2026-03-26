@@ -6,7 +6,7 @@ A maioria das iterações de uma SegTree funciona de maneira extremamente semelh
 
 A característica primária para compreender essa estrutura de dados é que todas as folhas são respectivas ao array, de forma que a folha mais à esquerda corresponda ao ```array[0]``` e a folha mais à direita ao ```array[array.size() - 1]```, por exemplo. Considerando uma função ```f(p1, p2)``` que corresponde à lógica da sua segtree, os nodos intermediários são ```node[i] = f(node[left], node[right])```.
 
-![SegmentTree](https://damiankuras.com/posts/segment-tree/images/seg-tree-update.svg)
+<img src="https://damiankuras.com/posts/segment-tree/images/seg-tree-update.svg" width="300">
 
 Na imagem a cima a função f -> sum(p1, p2)
 
