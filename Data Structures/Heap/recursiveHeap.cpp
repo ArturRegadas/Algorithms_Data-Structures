@@ -43,41 +43,38 @@ class Heap : private HeapIndexHelper{
     }
    
     void siftUp(int current_index){
-        while (current_index > 0){
-            int parent_index = getParentIndex(current_index);
-            if(getValueByIndex(current_index) < getValueByIndex(parent_index))
-                swap(heap[current_index], heap[parent_index]);
-            else
-                break;
-            current_index = parent_index;
+        if (current_index == 0)
+            return;
+
+        int parent_index = getParentIndex(current_index);
+
+        if (getValueByIndex(parent_index) > getValueByIndex(current_index)) {
+            swap(heap[parent_index], heap[current_index]);
+            siftUp(parent_index);
         }
     }
 
     void siftDown(int current_index){
-        while(true){
-            int left_index = getLeftIndex(current_index);
-            int right_index = getRightIndex(current_index);
+        int left_index = getLeftIndex(current_index);
+        int right_index = getRightIndex(current_index);
 
-            if (!validIndex(left_index))
-                return;
+        if (!validIndex(left_index))
+            return;
 
-             int min_value_index = left_index;
+        int min_value_index = left_index;
 
-             if (
-                 validIndex(right_index) &&
-                 heap[right_index] < heap[left_index]
-             ) {
-                 min_value_index = right_index;
-             }
-     
-             if (getValueByIndex(current_index) <= getValueByIndex(min_value_index))
-                 return;
-     
-             swap(heap[current_index], heap[min_value_index]);
-             current_index = min_value_index;
+        if (
+            validIndex(right_index) &&
+            getValueByIndex(right_index) < getValueByIndex(left_index)
+        ) {
+            min_value_index = right_index;
         }
 
+        if (getValueByIndex(current_index) <= getValueByIndex(min_value_index))
+            return;
 
+        swap(heap[current_index], heap[min_value_index]);
+        siftDown(min_value_index);
     }
 
     public:

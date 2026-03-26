@@ -40,8 +40,8 @@ class LazySegmentTree{
         // verifica se tem filhos, no caso verifica se o
         // range é diferent de [1,1] ou [2, 2] por exemplo
         if(l != r){
-            lazy[node*2] = max(lazy[node*2],lazy[node]);
-            lazy[node*2+1] = max(lazy[node*2+1],lazy[node]);
+            lazy[node*2] = max(lazy[node*2],lazy[node]); // for future
+            lazy[node*2+1] = max(lazy[node*2+1],lazy[node]); // for future
         }
         lazy[node] = 0;
 
